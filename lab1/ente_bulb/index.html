@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb Toggle</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 50px;
+        }
+        #bulbImage {
+            width: 200px;
+            height: auto;
+            margin: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bulb Control</h1>
+    <img id="bulbImage" src="off_bulb.png" alt="Bulb">
+    <br>
+    <button onclick="turnOn()">ON</button>
+    <button onclick="turnOff()">OFF</button>
+
+    <script>
+        function turnOn() {
+            document.getElementById('bulbImage').src = 'on_bulb.png';
+        }
+
+        function turnOff() {
+            document.getElementById('bulbImage').src = 'off_bulb.png';
+        }
+    </script>
+</body>
+</html>
