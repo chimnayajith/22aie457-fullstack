@@ -5,6 +5,11 @@ const todoList = document.getElementById('todoList');
 function addTodo(){
     const todoText = todoInput.value.trim();
 
+    if (todoText === '') {
+        alert('Please enter a task!');
+        return;
+    }
+    
     const li = document.createElement('li');
     li.className = 'todo-item';
 

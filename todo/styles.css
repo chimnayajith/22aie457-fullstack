@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#todoInput {
+    padding: 8px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+#addBtn {
+    padding: 8px 15px;
+}
+
+#todoList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.todo-item {
+    padding: 12px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+}
+
+.todo-item span {
+    flex: 1;
+    margin-left: 8px;
+}
+
+.delete-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
