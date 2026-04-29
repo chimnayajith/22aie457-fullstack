@@ -1,8 +1,10 @@
 const http = require("http");
+const greet = require("./greeting");
 
 const server = http.createServer((req, res) => {
   res.writeHead(200, { "Content-Type": "text/plain" });
-  res.end("Welcome to Node.js Server");
+  const message = greet("Chinmay");
+  res.end(`Welcome to Node.js Server\n${message}`);
 });
 
 server.listen(3000, () => {
